@@ -20,19 +20,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Back</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="shoppingcart.html">Shopping Cart</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Living Room</a></li>
-                <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Home Office</a></li>
-                <li><a class="dropdown-item" href="#">Bathroom</a></li>
-                <li><a class="dropdown-item" href="#">Entryway</a></li>
+                <li><a class="dropdown-item" href="livingroom.html">Living Room</a></li>
+                <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                <li><a class="dropdown-item" href="bathroom.html">Bathroom</a></li>
+                <li><a class="dropdown-item" href="entryway.html">Entryway</a></li>
               </ul>
             </li>
           </ul>
@@ -48,7 +49,7 @@
               <h4 class="card-title">Laptop Riser</h4>
               <h5 class="card-text">$11.99</h5>
               <p class="card-text">Wooden, 2 in. / 5 cm. Riser For All Laptops</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Laptop Riser', 11.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@
               <h4 class="card-title">Office Chair</h4>
               <h5 class="card-text">$3499.99</h5>
               <p class="card-text">Genuine Leather and Stainless Steel</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Office Chair', 3499.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -70,7 +71,7 @@
               <h4 class="card-title">Desk Lamp</h4>
               <h5 class="card-text">$19.99</h5>
               <p class="card-text">Gooseneck - Style Lamp for Office Desk</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Desk Lamp', 19.99)">Add To Shopping Cart</a>
             </div>
           </div>
       </div>
@@ -81,13 +82,13 @@
             <h4 class="card-title">Blue Tooth Mouse</h4>
               <h5 class="card-text">$35.99</h5>
             <p class="card-text">LogiTech M557</p>
-            <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+            <a href="#" class="btn btn-primary" onclick="addItem('Blue Tooth Mouse', 35.99)">Add To Shopping Cart</a>
           </div>
         </div>
     </div>
    
     </div>
   </div>
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </body> 
 </html>

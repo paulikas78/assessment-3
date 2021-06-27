@@ -20,19 +20,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Back</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="shoppingcart.html">Shopping Cart</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Living Room</a></li>
-                <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Home Office</a></li>
-                <li><a class="dropdown-item" href="#">Bathroom</a></li>
-                <li><a class="dropdown-item" href="#">Entryway</a></li>
+                <li><a class="dropdown-item" href="livingroom.html">Living Room</a></li>
+                <li><a class="dropdown-item" href="homeoffice.html">Home Office</a></li>
+                <li><a class="dropdown-item" href="bathroom.html">Bathroom</a></li>
+                <li><a class="dropdown-item" href="entryway.html">Entryway</a></li>
               </ul>
             </li>
           </ul>
@@ -48,7 +49,7 @@
               <h4 class="card-title">Plate Set</h4>
               <h5 class="card-text">$14.99</h5>
               <p class="card-text">4 Large Ceramic Plates</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Plate Set', 14.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@
               <h4 class="card-title">Silverware Set</h4>
               <h5 class="card-text">$59.99</h5>
               <p class="card-text">53 - Piece Silverware Set</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Silverware Set', 59.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -70,24 +71,24 @@
               <h4 class="card-title">Dish Towel Set</h4>
               <h5 class="card-text">$19.99</h5>
               <p class="card-text">7 Classic Logo Dish Towels</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Dish Towel Set', 19.99)">Add To Shopping Cart</a>
             </div>
           </div>
       </div>
       <div class="col">
         <div class="card m-5" style="width: 18rem;">
-          <img src="http://www.pamperedchef.com/iceberg/com/product/1609-lg.jpg" class="card-img-top" alt="...">
+          <img src="https://secure.img1-fg.wfcdn.com/im/00700546/resize-h600-w600%5Ecompr-r85/4191/41918851/Knife+Sets.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title">Kitchen Knife Set</h4>
               <h5 class="card-text">$79.99</h5>
-            <p class="card-text">7 - Piece Knife Set With Sharpener</p>
-            <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+            <p class="card-text">12 - Piece Knife Set With Sharpener</p>
+            <a href="#" class="btn btn-primary" onclick="addItem('Kitchen Knife Set', 79.99)">Add To Shopping Cart</a>
           </div>
         </div>
     </div>
    
     </div>
   </div>
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </body> 
 </html>

@@ -20,19 +20,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Back</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="shoppingcart.html">Shopping Cart</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Living Room</a></li>
-                <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Home Office</a></li>
-                <li><a class="dropdown-item" href="#">Bathroom</a></li>
-                <li><a class="dropdown-item" href="#">Entryway</a></li>
+                <li><a class="dropdown-item" href="livingroom.html">Living Room</a></li>
+                <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                <li><a class="dropdown-item" href="homeoffice.html">Home Office</a></li>
+                <li><a class="dropdown-item" href="entryway.html">Entryway</a></li>
               </ul>
             </li>
           </ul>
@@ -48,7 +49,7 @@
               <h4 class="card-title">Shaving Mirror</h4>
               <h5 class="card-text">$24.99</h5>
               <p class="card-text">8 in. / 20 cm. x 4 in. / 10 cm. Mirror w/ Suction Cups / Shower Wall Mounts</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Shaving Mirror', 24.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@
               <h4 class="card-title">Bath Towel Set</h4>
               <h5 class="card-text">$49.99</h5>
               <p class="card-text">6 - Piece, Plush, Teal Set</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Bath Towel Set', 49.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -70,7 +71,7 @@
               <h4 class="card-title">Toilet Paper</h4>
               <h5 class="card-text">$9.99</h5>
               <p class="card-text">12 Rolls of Scott 1000 Toilet Paper</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Toilet Paper', 9.99)">Add To Shopping Cart</a>
             </div>
           </div>
       </div>
@@ -81,13 +82,13 @@
             <h4 class="card-title">Razor</h4>
               <h5 class="card-text">$29.99</h5>
             <p class="card-text">Stainless Steel, Straight Razor</p>
-            <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+            <a href="#" class="btn btn-primary" onclick="addItem('Razor', 29.99)">Add To Shopping Cart</a>
           </div>
         </div>
     </div>
    
     </div>
   </div>
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </body> 
 </html>

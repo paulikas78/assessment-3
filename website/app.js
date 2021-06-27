@@ -6,7 +6,7 @@ let nextListId = 0
 
  initializeData()
 
-
+ let cartTotal = 0;
 
  function initializeData() {
    let stringData = localStorage.getItem(itemListKey)
@@ -22,24 +22,26 @@ let nextListId = 0
  }
 
 
- function addItem() {
+ function addItem(itemName, itemCost) {
    // find input element
-   let input = document.getElementById("input-item")
-   if (!input) {
-     return
-   }
+   //let input = document.getElementById("input-item")
+  //  if (!input) {
+  //    return
+  //  }
 
    // grab text from input
-   let itemName = input.value
-
-   addItemToPage(itemName)
 
    // add item to localStorage
    itemList.push(itemName)
    stringData = JSON.stringify(itemList)
    localStorage.setItem(itemListKey, stringData)
 
-   input.value = ""
+   // add item cost to sum
+   console.log(itemName)
+   console.log(itemCost)
+   cartTotal = localStorage.getItem("Total Cost")
+   cartTotal += itemCost
+   localStorage.setItem("Total Cost", cartTotal)
  }
 
 
@@ -82,3 +84,8 @@ let nextListId = 0
      ? "#000000"
      : "#FFFFFF"
  } 
+
+ function displayCartTotal() {
+   console.log("cart total " + cartTotal)
+   document.getElementById("cartTotal").innerHTML = localStorage.getItem("Total Cost")
+ }

@@ -20,19 +20,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Back</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="shoppingcart.html">Shopping Cart</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Living Room</a></li>
-                <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Home Office</a></li>
-                <li><a class="dropdown-item" href="#">Bathroom</a></li>
-                <li><a class="dropdown-item" href="#">Entryway</a></li>
+                <li><a class="dropdown-item" href="livingroom.html">Living Room</a></li>
+                <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                <li><a class="dropdown-item" href="homeoffice.html">Home Office</a></li>
+                <li><a class="dropdown-item" href="bathroom.html">Bathroom</a></li>
               </ul>
             </li>
           </ul>
@@ -48,7 +49,7 @@
               <h4 class="card-title">Welcome Mat</h4>
               <h5 class="card-text">$19.99</h5>
               <p class="card-text">20 in. / 51 cm. x 50 in. / 115 cm. Black Carpeted Mat</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Welcome Mat', 19.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@
               <h4 class="card-title">Indoor Slippers</h4>
               <h5 class="card-text">$29.99</h5>
               <p class="card-text">Black, Open Toe</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Indoor Slippers', 29.99)">Add To Shopping Cart</a>
             </div>
           </div>
         </div>
@@ -70,7 +71,7 @@
               <h4 class="card-title">Flag Mount</h4>
               <h5 class="card-text">$24.99</h5>
               <p class="card-text">Outdoor Flag Mount & Mounting Hardware</p>
-              <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+              <a href="#" class="btn btn-primary" onclick="addItem('Flag Mount', 24.99)">Add To Shopping Cart</a>
             </div>
           </div>
       </div>
@@ -81,13 +82,13 @@
             <h4 class="card-title">Shoe Rack</h4>
               <h5 class="card-text">$29.99</h5>
             <p class="card-text">16 - Pair Shoe Organizer Rack</p>
-            <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
+            <a href="#" class="btn btn-primary" onclick="addItem('Shoe Rack', 29.99)">Add To Shopping Cart</a>
           </div>
         </div>
     </div>
    
     </div>
   </div>
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </body> 
 </html>
