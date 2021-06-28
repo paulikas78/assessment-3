@@ -11,70 +11,56 @@ let nextListId = 0
  function initializeData() {
    let stringData = localStorage.getItem(itemListKey)
    if (stringData) {
-     // convert string stored in local storage to JS array
-     itemList = JSON.parse(stringData)
+     
+     itemList = JSON.parse(stringData)  // convert string stored in local storage to an array
 
-     // add each item name to an unordered list on the page
-     for (let i = 0; i < itemList.length; i++) {
+    
+     for (let i = 0; i < itemList.length; i++) {   // add each item name to an unordered list on the page
        addItemToPage(itemList[i])
      }
    }
  }
 
 
- function addItem(itemName, itemCost) {
-   // find input element
-   //let input = document.getElementById("input-item")
-  //  if (!input) {
-  //    return
-  //  }
-
-   // grab text from input
-
-   // add item to localStorage
+ function addItem(itemName, itemCost) {  // grab info from input & add item to localStorage 
    itemList.push(itemName)
    stringData = JSON.stringify(itemList)
    localStorage.setItem(itemListKey, stringData)
 
-   // add item cost to sum
-   console.log(itemName)
+   console.log(itemName)   
    console.log(itemCost)
-   cartTotal = localStorage.getItem("Total Cost")
+   cartTotal = Number(localStorage.getItem("Total Cost"))    // add item cost to total
    cartTotal += itemCost
    localStorage.setItem("Total Cost", cartTotal)
  }
 
 
  function addItemToPage(itemName) {
-
-   // find existing parent list element
-   let itemListElement = document.getElementById("checkout-list")
+   let itemListElement = document.getElementById("checkout-list")    // find existing parent list element
    if (!itemListElement) {
      return
    }
 
-   // create a new list item
-   let newListItem = document.createElement("li")
+   
+   let newListItem = document.createElement("li")    // create a new list item
    newListItem.id = "list-item-" + nextListId
    nextListId += 1
    newListItem.className = "item-list-item"
    newListItem.addEventListener("click", toggleItemState)
 
-   // add text to new list item
-   newListItem.innerHTML = itemName
+   
+   newListItem.innerHTML = itemName   // add text to new list item
 
-   // add list item to existing list
-   itemListElement.appendChild(newListItem)
+   
+   itemListElement.appendChild(newListItem)   // add item to existing list
  }
 
 
- function toggleItemState(event) {
-   // get item
+ function toggleItemState(event) {                           // line out items you don't want to buy.
    let listItem = document.getElementById(event.target.id)
    if (!listItem)
      return
 
-   // change strike-through state
    let isCheckedOff = listItem.style.textDecoration === "line-through"
 
    listItem.style.textDecoration = isCheckedOff 
@@ -82,7 +68,7 @@ let nextListId = 0
      : "line-through"
    listItem.style.color = isCheckedOff 
      ? "#000000"
-     : "#FFFFFF"
+     : "#000000"
  } 
 
  function displayCartTotal() {
